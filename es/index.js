@@ -2,8 +2,8 @@ export { createComponent } from "./createComponent";
 export { customMap } from "./maps/mapError";
 export { default as CheckboxField } from "./components/CheckboxField";
 export { default as CheckboxGroupField } from "./components/CheckboxGroupField"; // TODO forces inclusion of moment, somehow tree shaking does not work?
-// export { DatePickerField, DatePickerFieldRU, MonthPickerField } from "./components/DatePicker";
 
+export { DatePickerField, DatePickerFieldRU, MonthPickerField } from "./components/DatePicker";
 export { default as LazyTextField } from "./components/LazyTextField";
 export { default as NumberField } from "./components/NumberField";
 export { default as RadioField } from "./components/RadioField";
