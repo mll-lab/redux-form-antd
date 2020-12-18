@@ -3,7 +3,7 @@
   "version": "3.2.4",
   "description": "antd redux form bindings",
   "main": "./lib/index.js",
-  "jsnext:main": "./es/index.js",
+  "module": "./es/index.js",
   "sideEffects": false,
   "homepage": "https://zhdmitry.github.io/redux-form-antd",
   "repository": {
