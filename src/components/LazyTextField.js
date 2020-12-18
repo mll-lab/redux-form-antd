@@ -1,5 +1,5 @@
 import Input from "antd/lib/input";
-import { createComponent } from "./createComponent";
+import { createComponent } from "../createComponent";
 import { getValidateStatus } from "../maps/mapError";
 
 // will trigger on change only onBlur

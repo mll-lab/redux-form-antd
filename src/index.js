@@ -1,4 +1,4 @@
-export { createComponent } from "./components/createComponent";
+export { createComponent } from "./createComponent";
 export { customMap } from "./maps/mapError";
 
 export { default as CheckboxField } from "./components/CheckboxField";

@@ -7,7 +7,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 import moment from "moment";
 import DatePicker from "antd/lib/date-picker";
 import { customMap } from "../maps/mapError";
-import { createComponent } from "./createComponent";
+import { createComponent } from "../createComponent";
 var MonthPicker = DatePicker.MonthPicker;
 
 var valueToMoment = function valueToMoment(value, dateFormat) {

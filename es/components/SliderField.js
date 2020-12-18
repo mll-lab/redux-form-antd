@@ -6,7 +6,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 import Slider from "antd/lib/slider";
 import { customMap, defaultTo } from "../maps/mapError";
-import { createComponent } from "./createComponent";
+import { createComponent } from "../createComponent";
 var sliderMap = customMap(function (mapProps, _ref) {
   var _ref$input = _ref.input,
       onAfterChange = _ref$input.onAfterChange,

@@ -1,6 +1,6 @@
 import Switch from "antd/lib/switch";
 import { customMap } from "../maps/mapError";
-import { createComponent } from "./createComponent";
+import { createComponent } from "../createComponent";
 
 const switchMap = customMap((mapProps, { input: { value, onBlur, onChange } }) => ({
   ...mapProps,
