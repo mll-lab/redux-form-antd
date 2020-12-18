@@ -1,10 +1,3 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = exports.customMap = exports.defaultTo = exports.getValidateStatus = void 0;
-
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -17,7 +10,7 @@ function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) r
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-var getValidateStatus = function getValidateStatus(touched, error, warning, valid) {
+export var getValidateStatus = function getValidateStatus(touched, error, warning, valid) {
   if (touched) {
     if (error) return "error";
     if (warning) return "warning";
@@ -26,15 +19,10 @@ var getValidateStatus = function getValidateStatus(touched, error, warning, vali
 
   return undefined;
 };
-
-exports.getValidateStatus = getValidateStatus;
-
-var defaultTo = function defaultTo(value, d) {
+export var defaultTo = function defaultTo(value, d) {
   if (!value && value !== 0) return d;
   return value;
 };
-
-exports.defaultTo = defaultTo;
 
 var mapError = function mapError(_ref) {
   var _ref$meta = _ref.meta;
@@ -47,20 +35,17 @@ var mapError = function mapError(_ref) {
       inputProps = _extends({}, _ref.input),
       props = _objectWithoutProperties(_ref, ["meta", "input"]);
 
-  return _objectSpread({}, props, {}, inputProps, {
+  return _objectSpread(_objectSpread(_objectSpread({}, props), inputProps), {}, {
     validateStatus: getValidateStatus(touched, error, warning, valid),
     help: touched && (error || warning)
   });
 };
 
-var customMap = function customMap(customPropsFun) {
+export var customMap = function customMap(customPropsFun) {
   return function (props) {
     return [props].reduce(customPropsFun || function (mappedProps) {
       return mappedProps;
     }, mapError(props));
   };
 };
-
-exports.customMap = customMap;
-var _default = mapError;
-exports["default"] = _default;
+export default mapError;
