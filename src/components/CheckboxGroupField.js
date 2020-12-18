@@ -1,6 +1,6 @@
 import Checkbox from "antd/lib/checkbox";
 import { customMap, defaultTo } from "../maps/mapError";
-import createComponent from "./BaseComponent";
+import { createComponent } from "./BaseComponent";
 
 const CheckboxGroup = Checkbox.Group;
 
