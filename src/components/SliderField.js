@@ -1,6 +1,6 @@
 import Slider from "antd/lib/slider";
 import { customMap, defaultTo } from "../maps/mapError";
-import createComponent from "./BaseComponent";
+import createComponent from "./createComponent";
 
 const sliderMap = customMap(
   (mapProps, { input: { onAfterChange, onChange, value = 0 }, range, min = 0, max = 100 }) => {

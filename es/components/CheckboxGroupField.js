@@ -6,7 +6,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 import Checkbox from "antd/lib/checkbox";
 import { customMap, defaultTo } from "../maps/mapError";
-import { createComponent } from "./BaseComponent";
+import { createComponent } from "./createComponent";
 var CheckboxGroup = Checkbox.Group;
 var checkboxGroupMap = customMap(function (mapProps, _ref) {
   var _ref$input = _ref.input,

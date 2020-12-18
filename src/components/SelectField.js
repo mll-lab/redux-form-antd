@@ -1,5 +1,5 @@
 import { customMap } from "../maps/mapError";
-import createComponent from "./BaseComponent";
+import createComponent from "./createComponent";
 import { SelectField as Select } from "./MultiSelect";
 
 const selectFieldMap = customMap(
