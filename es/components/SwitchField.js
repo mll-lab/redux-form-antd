@@ -6,7 +6,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 import Switch from "antd/lib/switch";
 import { customMap } from "../maps/mapError";
-import createComponent from "./createComponent";
+import { createComponent } from "./createComponent";
 var switchMap = customMap(function (mapProps, _ref) {
   var _ref$input = _ref.input,
       value = _ref$input.value,

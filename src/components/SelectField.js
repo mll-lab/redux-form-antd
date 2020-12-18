@@ -1,6 +1,6 @@
 import { customMap } from "../maps/mapError";
-import createComponent from "./createComponent";
-import { SelectField as Select } from "./MultiSelect";
+import { createComponent } from "./createComponent";
+import { SelectField as Select } from "./withOptions";
 
 const selectFieldMap = customMap(
   (mapProps, { input: { onChange, value }, multiple, options, placeholder }) => {
