@@ -75,9 +75,9 @@ the `username` element when your form mounts, you could do:
 
 ```js
 componentWillMount() {
-  this.refs.firstField    
-    .getRenderedComponent() 
-    .focus()                
+  this.refs.firstField  
+    .getRenderedComponent()
+    .focus()  
 }
 ```
 
@@ -97,7 +97,7 @@ render() {
 
 ## Custom component wrapper
 
-You can use `createComponent` and `customMap` functions to wrap your custom component. 
+You can use `createComponent` and `customMap` functions to wrap your custom component.
 Usage example:
 
 ```js
@@ -116,12 +116,12 @@ export const InputPasswordViewable = createComponent(InputPasswordViewableCompon
 ```
 
 * `createComponent` creates FormItem wrapper and attaches validate status handler.
-* `customMap` maps redux-form [Field props](https://redux-form.com/7.2.3/docs/api/field.md/#props) 
+* `customMap` maps redux-form [Field props](https://redux-form.com/7.2.3/docs/api/field.md/#props)
 to ant.design [form fields props](https://ant.design/components/form/#components-form-demo-validate-static).
-You can omit customMap's attribute, in such case default mapping will be applied. 
-If you specify a map function, then it should return an object with required 
-properties for ant's FormItem and your component. The signature of map function 
-is `(mapProps, props) => ({...mapProps})`, where `mapProps` - default mapping 
+You can omit customMap's attribute, in such case default mapping will be applied.
+If you specify a map function, then it should return an object with required
+properties for ant's FormItem and your component. The signature of map function
+is `(mapProps, props) => ({...mapProps})`, where `mapProps` - default mapping
 properties, `props` - redux-form's Field properties.
 
 ---
